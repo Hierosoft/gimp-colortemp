@@ -1,5 +1,5 @@
 # gimp-colortemp
-(not to be confused with [gimp-whitebalance](https://github.com/Hierosoft/gimp-colortemp)
+(not to be confused with [gimp-whitebalance](https://github.com/Hierosoft/gimp-whitebalance)
 
 ## Documentation
 > **colortemp** is a [Gimp](https://web.archive.org/web/20120307072519/http://spip.dealfaro.com/home/code/www.gimp.org) script for changing the color temperature of an image. It can be used to correct the red color cast of photos taken under incandescent light with the camera on daylight setting, or to correct the blue cast of outdoor photos taken in overcast conditions. The color conversions are based on black-body colors at various temperatures, and are performed in the sRGB color space. In Gimp 2.4, more colorspaces are supported, but the plugin has not yet been adapted to work with general colorspaces.
