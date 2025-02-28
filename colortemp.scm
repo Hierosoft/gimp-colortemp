@@ -4,7 +4,8 @@
 ;
 ; Last changed: Feb 25, 2009
 ;
-; Copyright (C) 2006-2009 Luca de Alfaro <lda@dealfaro.org>
+; Copyright (C) 2006-2009 Luca de Alfaro <lda@dealfaro.org>,
+;   2017 rich2005 <https://www.gimp-forum.net/Thread-Script-for-Image-color-Temperature?pid=1304#pid1304>
 ;
 ; --------------------------------------------------------------------
 ; 
@@ -262,7 +263,7 @@
 	 (bratio (* rb m))
 
          (i 0)
-         (num_bytes 256)
+         (num_bytes 256.0)
          (red-curve   (cons-array num_bytes 'byte))
          (green-curve (cons-array num_bytes 'byte))
          (blue-curve  (cons-array num_bytes 'byte)))
@@ -275,9 +276,9 @@
       (aset blue-curve  i (lin-mult-in-gamma-space i bratio))
       (set! i (+ i 1)))
 
-    (gimp-curves-explicit drawable RED-LUT   num_bytes red-curve  )
-    (gimp-curves-explicit drawable GREEN-LUT num_bytes green-curve)
-    (gimp-curves-explicit drawable BLUE-LUT  num_bytes blue-curve )
+    (gimp-curves-explicit drawable 1   num_bytes red-curve  )
+    (gimp-curves-explicit drawable 2 num_bytes green-curve)
+    (gimp-curves-explicit drawable 3  num_bytes blue-curve )
 
     (gimp-hue-saturation drawable 0 0.0 0.0 satura)
 
@@ -304,4 +305,3 @@
 
 (script-fu-menu-register "script-fu-colortemp"
 			 _"<Image>/Filters/Colors")
-
