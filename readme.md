@@ -55,6 +55,7 @@ Further explanation:
 ## Discussions Leading up to this repo
 - 2017-02-21 [Script for Image color Temperature](https://www.gimp-forum.net/Thread-Script-for-Image-color-Temperature?pid=1304#pid1304)
   - Has GIMP 2.9.5 update (included as release 2.9.5-1 in this repo) edited by rich2005.
+- 2018-12-06 [Color Temperature](https://www.gimp-forum.net/Thread-Color-Temperature) on GIMP Forum
 - 2019-05-30 [color temperature - make more clear what the two Color Temperature sliders actually do](https://gitlab.gnome.org/GNOME/gimp/-/issues/3440) GIMP issue
   - Related documentation: <https://docs.gimp.org/2.10/en/gimp-filter-color-temperature.html>
 
